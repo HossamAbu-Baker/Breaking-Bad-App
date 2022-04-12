@@ -15,6 +15,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
         collectionView.dataSource=self
         setupCell()
         
+        collectionView.backgroundColor = .black
   
 
         getData()
