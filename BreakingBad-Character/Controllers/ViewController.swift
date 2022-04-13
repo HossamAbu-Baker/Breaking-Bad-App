@@ -13,8 +13,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
         collectionView.delegate=self
         collectionView.dataSource=self
         collectionView.backgroundColor = .gray
-        setupCell()
         
+        setupCell()
         getData()
         
     }
@@ -27,8 +27,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
     }
     
   
-
-    
     // MARK: get data from servar
     func getData () {
         
