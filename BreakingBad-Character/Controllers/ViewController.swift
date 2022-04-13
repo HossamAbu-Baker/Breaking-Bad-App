@@ -5,7 +5,6 @@ class ViewController: UIViewController,UISearchBarDelegate {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     var char = [Character]()
 
     override func viewDidLoad() {
@@ -13,13 +12,10 @@ class ViewController: UIViewController,UISearchBarDelegate {
         
         collectionView.delegate=self
         collectionView.dataSource=self
+        collectionView.backgroundColor = .gray
         setupCell()
         
-        collectionView.backgroundColor = .black
-  
-
         getData()
-        
         
     }
     
@@ -69,33 +65,36 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         
         cell.nameLabel.text = opject.name
         cell.photo.image = UIImage(data: url)
-        cell.backgroundColor = .red
+        cell.backgroundColor = .white
         
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "infoVC") as! InfoVC
         
         let opject = char[indexPath.row]
         vc.char = opject
+        vc.view.backgroundColor = .yellow
         
         navigationController?.pushViewController(vc, animated: true)
     }
     
     
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width * 0.42, height: self.view.frame.width * 0.42)
+        
+        return CGSize(width: self.view.frame.width * 0.48, height: self.view.frame.width * 0.48)
         
         }
 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 2
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 2
     }
+
 
 

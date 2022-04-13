@@ -29,7 +29,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="0oS-uT-Jrs" secondAttribute="bottom" id="02S-Xe-KBj"/>
                             <constraint firstItem="0oS-uT-Jrs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RYY-ZX-L9q"/>
@@ -37,7 +37,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0oS-uT-Jrs" secondAttribute="trailing" id="rG3-Ln-mBv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Characters" id="11F-X4-hnW"/>
+                    <navigationItem key="navigationItem" title="Characters" id="11F-X4-hnW">
+                        <barButtonItem key="backBarButtonItem" title="  " id="Jys-Vj-fQE"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="0oS-uT-Jrs" id="t5Z-rH-yPn"/>
                     </connections>
@@ -150,6 +152,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xu6-8D-btv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
