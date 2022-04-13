@@ -10,8 +10,8 @@ class ViewController: UIViewController,UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.delegate=self
-        collectionView.dataSource=self
+        collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.backgroundColor = .gray
         
         setupCell()
@@ -64,11 +64,13 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         cell.nameLabel.text = opject.name
         cell.photo.image = UIImage(data: url)
         cell.backgroundColor = .white
+     
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      
         let vc = storyboard?.instantiateViewController(withIdentifier: "infoVC") as! InfoVC
         
         let opject = char[indexPath.row]
