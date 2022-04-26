@@ -6,6 +6,7 @@ class ViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     
     var char = [Character]()
+    var constant = Constant()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -13,15 +14,13 @@ class ViewController: UIViewController{
         collectionView.dataSource = self
         collectionView.backgroundColor = .gray
         
-     
-        
         setupCell()
         getData()
         
-        
+       
     
     }
-    
+
     
     //             MARK: set Cell
     
@@ -73,12 +72,13 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       
+       
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "infoVC") as! InfoVC
         
         let opject = char[indexPath.row]
         vc.char = opject
 //        vc.view.backgroundColor = .yellow
-        
         
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -87,14 +87,15 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 170, height: 150)
+        return CGSize(width: 185, height: 150)
         
         }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 5
+        return 10
     }
     }
 

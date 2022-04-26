@@ -18,6 +18,7 @@ class InfoVC: UIViewController {
     
     
     var char : Character!
+    var constant = Constant()
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -31,6 +32,7 @@ class InfoVC: UIViewController {
         let url = try! Data(contentsOf: urlImage)
         photo.image = UIImage(data: url)
         
+
+        
     }
- 
 }
