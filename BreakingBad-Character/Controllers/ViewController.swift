@@ -1,12 +1,11 @@
 
 import UIKit
 
-class ViewController: UIViewController,UISearchBarDelegate {
+class ViewController: UIViewController{
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     var char = [Character]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -14,9 +13,13 @@ class ViewController: UIViewController,UISearchBarDelegate {
         collectionView.dataSource = self
         collectionView.backgroundColor = .gray
         
+     
+        
         setupCell()
         getData()
         
+        
+    
     }
     
     
@@ -25,8 +28,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     func setupCell(){
         collectionView.register(UINib(nibName: "CharacterCell", bundle: nil), forCellWithReuseIdentifier: "CharacterCell")
     }
-    
-  
+
     // MARK: get data from servar
     func getData () {
         
@@ -75,7 +77,8 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         
         let opject = char[indexPath.row]
         vc.char = opject
-        vc.view.backgroundColor = .yellow
+//        vc.view.backgroundColor = .yellow
+        
         
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -84,17 +87,19 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: self.view.frame.width * 0.48, height: self.view.frame.width * 0.48)
+        return CGSize(width: 170, height: 150)
         
         }
-
-    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 2
+        return 5
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 2
+        return 5
     }
+    }
+
+    
+
 
 
 

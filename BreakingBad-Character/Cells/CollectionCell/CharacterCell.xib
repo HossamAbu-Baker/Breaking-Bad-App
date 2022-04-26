@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -15,6 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="193"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-Eh-COj">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="193"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yF0-Oe-yK0">
                         <rect key="frame" x="0.0" y="73" width="150" height="120"/>
                         <constraints>
@@ -36,7 +41,11 @@
                 <constraint firstAttribute="bottom" secondItem="yF0-Oe-yK0" secondAttribute="bottom" id="Fw8-Gt-LSZ"/>
                 <constraint firstItem="mqC-Xa-YuV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="LUc-tr-8xu"/>
                 <constraint firstAttribute="trailing" secondItem="mqC-Xa-YuV" secondAttribute="trailing" constant="5" id="MgZ-eD-L03"/>
+                <constraint firstItem="dN6-Eh-COj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TTE-o4-LOZ"/>
+                <constraint firstAttribute="bottom" secondItem="dN6-Eh-COj" secondAttribute="bottom" id="Zqk-Nr-c4a"/>
                 <constraint firstItem="mqC-Xa-YuV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="chP-tC-UVR"/>
+                <constraint firstItem="dN6-Eh-COj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cy1-Ue-HJK"/>
+                <constraint firstAttribute="trailing" secondItem="dN6-Eh-COj" secondAttribute="trailing" id="dDm-16-S8U"/>
                 <constraint firstItem="mqC-Xa-YuV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="iCM-aE-9zi"/>
                 <constraint firstItem="yF0-Oe-yK0" firstAttribute="top" secondItem="mqC-Xa-YuV" secondAttribute="bottom" constant="5" id="kx6-y5-ECO"/>
                 <constraint firstAttribute="trailing" secondItem="mqC-Xa-YuV" secondAttribute="trailing" constant="5" id="l1W-0T-xgc"/>
@@ -50,4 +59,9 @@
             <point key="canvasLocation" x="-339.13043478260875" y="-37.165178571428569"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

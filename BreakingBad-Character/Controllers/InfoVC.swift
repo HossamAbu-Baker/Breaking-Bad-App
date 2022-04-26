@@ -32,8 +32,5 @@ class InfoVC: UIViewController {
         photo.image = UIImage(data: url)
         
     }
-    
-
-   
-
+ 
 }
