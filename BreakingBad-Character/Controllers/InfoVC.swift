@@ -18,7 +18,6 @@ class InfoVC: UIViewController {
     
     
     var char : Character!
-    var constant = Constant()
     override func viewDidLoad() {
         super.viewDidLoad()
       

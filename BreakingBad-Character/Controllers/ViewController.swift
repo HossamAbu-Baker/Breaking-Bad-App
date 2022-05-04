@@ -6,7 +6,6 @@ class ViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     
     var char = [Character]()
-    var constant = Constant()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -87,16 +86,17 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: 185, height: 150)
+        return CGSize(width: self.view.frame.width * 0.488, height: self.view.frame.width * 0.488)
         
         }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 5
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 10
+        return 2
     }
+    
     }
 
     
