@@ -18,6 +18,7 @@ class InfoVC: UIViewController {
     
     
     var char : Character!
+    var key = Constants()
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -31,7 +32,10 @@ class InfoVC: UIViewController {
         let url = try! Data(contentsOf: urlImage)
         photo.image = UIImage(data: url)
         
-
+        NotificationCenter.default.addObserver(self, selector: #selector(addNewColor), name: NSNotification.Name(key.newNotifacationKey), object: nil)
         
+    }
+   @objc func addNewColor(){
+       view.backgroundColor = .yellow
     }
 }

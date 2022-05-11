@@ -16,6 +16,7 @@
 		7B2293542804C791007EB976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B2293522804C791007EB976 /* LaunchScreen.storyboard */; };
 		7B22935D2804C7B5007EB976 /* Reguest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22935C2804C7B5007EB976 /* Reguest.swift */; };
 		7B2293622804C829007EB976 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2293612804C829007EB976 /* Character.swift */; };
+		7B58D0B2282B160B00C852E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B58D0B1282B160B00C852E0 /* Constant.swift */; };
 		7B91015A2804CEA900F1F342 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9101582804CEA900F1F342 /* CharacterCell.swift */; };
 		7B91015B2804CEA900F1F342 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9101592804CEA900F1F342 /* CharacterCell.xib */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		7B2293552804C791007EB976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B22935C2804C7B5007EB976 /* Reguest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reguest.swift; sourceTree = "<group>"; };
 		7B2293612804C829007EB976 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		7B58D0B1282B160B00C852E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7B9101582804CEA900F1F342 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		7B9101592804CEA900F1F342 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				7B2293502804C791007EB976 /* Assets.xcassets */,
 				7B2293522804C791007EB976 /* LaunchScreen.storyboard */,
 				7B2293552804C791007EB976 /* Info.plist */,
+				7B58D0B1282B160B00C852E0 /* Constant.swift */,
 			);
 			path = "BreakingBad-Character";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				7B22934C2804C790007EB976 /* ViewController.swift in Sources */,
 				7B2293482804C790007EB976 /* AppDelegate.swift in Sources */,
 				7B2293622804C829007EB976 /* Character.swift in Sources */,
+				7B58D0B2282B160B00C852E0 /* Constant.swift in Sources */,
 				7B91015A2804CEA900F1F342 /* CharacterCell.swift in Sources */,
 				7B0458402805FE0D0001E1D8 /* InfoVC.swift in Sources */,
 				7B22934A2804C790007EB976 /* SceneDelegate.swift in Sources */,

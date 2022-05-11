@@ -6,6 +6,8 @@ class ViewController: UIViewController{
     @IBOutlet weak var collectionView: UICollectionView!
     
     var char = [Character]()
+    var key = Constants()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,7 +70,7 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
       
        
@@ -77,13 +79,14 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         
         let opject = char[indexPath.row]
         vc.char = opject
-//        vc.view.backgroundColor = .yellow
-        
+
+        vc.view.backgroundColor = .blue
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: key.newNotifacationKey), object: nil)
         navigationController?.pushViewController(vc, animated: true)
     }
     
     
-    
+//    size of cell
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         return CGSize(width: self.view.frame.width * 0.488, height: self.view.frame.width * 0.488)
@@ -97,9 +100,9 @@ extension ViewController : UICollectionViewDelegate,UICollectionViewDataSource,U
         return 2
     }
     
+    
     }
 
-    
 
 
 

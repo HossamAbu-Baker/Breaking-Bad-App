@@ -96,7 +96,8 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pir-uj-Mej"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pir-uj-Mej" firstAttribute="trailing" secondItem="Ebq-4M-dT4" secondAttribute="trailing" constant="20" id="0wR-EF-RIC"/>
                             <constraint firstItem="cBk-R0-bO2" firstAttribute="height" secondItem="IeE-Pd-SXV" secondAttribute="height" multiplier="0.1" id="0yc-ci-PXu"/>
