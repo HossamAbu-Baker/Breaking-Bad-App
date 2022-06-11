@@ -19,9 +19,11 @@ class InfoVC: UIViewController {
     
     var char : Character!
     var key = Constants()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        navigationController?.navigationBar.isHidden = true
         nameLabel.text = char.name
         neckName.text = "nickName :\(char.nickname ?? "")"
         birthday.text = " birthday : \(char.birthday?.rawValue ?? "")"

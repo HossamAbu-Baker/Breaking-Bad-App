@@ -15,7 +15,19 @@ class CharacterCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+            }
+    
+//    MARK: addData to cell
+    func addDataToCell(name:String,img:String){
+        nameLabel.text = name
+        
+        let url = URL(string: img)!
+        do{
+            let data = try Data(contentsOf: url)
+            photo.image = UIImage(data: data)
+        }catch{
+            print(error)
+        }
+        
     }
-
 }
