@@ -1,8 +1,9 @@
 
 import UIKit
-
+import NVActivityIndicatorView
 class ViewController: UIViewController{
 
+    @IBOutlet weak var activeLoad: NVActivityIndicatorView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var char = [Character]()
@@ -14,7 +15,9 @@ class ViewController: UIViewController{
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.backgroundColor = .gray
-        
+        activeLoad.type = .ballRotateChase
+        activeLoad.color = .blue
+        activeLoad.startAnimating()
         setupCell()
         getData()
     }
@@ -29,13 +32,14 @@ class ViewController: UIViewController{
     
     func getData () {
         
-        Reguest().CallAPI(url: "https://www.breakingbadapi.com/api/characters/", method: "GET", parametar: [:], header: [:], response: [Character].self) { data in
+        Reguest().CallAPI(url: "https://www.breakingbadapi.com/api/characters/", method: "GET", parametar: [:], header: [:], response: [Character].self) { [self] data in
             switch data{
                 
             case .success(let res):
                 
-                self.char = res ?? []
-                self.collectionView.reloadData()
+                char = res ?? []
+                activeLoad.stopAnimating()
+                collectionView.reloadData()
             case .failure(let error):
                 print(error)
             }

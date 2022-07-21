@@ -19,9 +19,11 @@
 		7B58D0B2282B160B00C852E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B58D0B1282B160B00C852E0 /* Constant.swift */; };
 		7B91015A2804CEA900F1F342 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9101582804CEA900F1F342 /* CharacterCell.swift */; };
 		7B91015B2804CEA900F1F342 /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9101592804CEA900F1F342 /* CharacterCell.xib */; };
+		C3C71ACA4849883F9B4A1C85 /* Pods_BreakingBad_Character.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224ED8B563FBF3C950913F68 /* Pods_BreakingBad_Character.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		224ED8B563FBF3C950913F68 /* Pods_BreakingBad_Character.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BreakingBad_Character.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B04583F2805FE0D0001E1D8 /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		7B2293442804C790007EB976 /* BreakingBad-Character.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BreakingBad-Character.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B2293472804C790007EB976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		7B58D0B1282B160B00C852E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7B9101582804CEA900F1F342 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
 		7B9101592804CEA900F1F342 /* CharacterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterCell.xib; sourceTree = "<group>"; };
+		813E42EAFE4E7CFCC812C81E /* Pods-BreakingBad-Character.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad-Character.release.xcconfig"; path = "Target Support Files/Pods-BreakingBad-Character/Pods-BreakingBad-Character.release.xcconfig"; sourceTree = "<group>"; };
+		CDBAA1A5AFAE8302514F04C8 /* Pods-BreakingBad-Character.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BreakingBad-Character.debug.xcconfig"; path = "Target Support Files/Pods-BreakingBad-Character/Pods-BreakingBad-Character.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,26 +47,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C71ACA4849883F9B4A1C85 /* Pods_BreakingBad_Character.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B0458372805F8840001E1D8 /* CollectionCell */ = {
-			isa = PBXGroup;
-			children = (
-				7B9101592804CEA900F1F342 /* CharacterCell.xib */,
-				7B9101582804CEA900F1F342 /* CharacterCell.swift */,
-			);
-			path = CollectionCell;
-			sourceTree = "<group>";
-		};
 		7B22933B2804C790007EB976 = {
 			isa = PBXGroup;
 			children = (
 				7B2293462804C790007EB976 /* BreakingBad-Character */,
 				7B2293452804C790007EB976 /* Products */,
+				A2C9E1E963B59383C8C49A40 /* Pods */,
+				921C231434AB25ED1863FA47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +79,10 @@
 				7B22935E2804C7C7007EB976 /* Models */,
 				7B22935B2804C79D007EB976 /* Networking */,
 				7B2293602804C7D9007EB976 /* Controllers */,
-				7B2293472804C790007EB976 /* AppDelegate.swift */,
+				7B73518D2889A5B300D278B8 /* Views */,
 				7B2293492804C790007EB976 /* SceneDelegate.swift */,
-				7B22934D2804C790007EB976 /* Main.storyboard */,
-				7B2293502804C791007EB976 /* Assets.xcassets */,
-				7B2293522804C791007EB976 /* LaunchScreen.storyboard */,
+				7B2293472804C790007EB976 /* AppDelegate.swift */,
 				7B2293552804C791007EB976 /* Info.plist */,
-				7B58D0B1282B160B00C852E0 /* Constant.swift */,
 			);
 			path = "BreakingBad-Character";
 			sourceTree = "<group>";
@@ -103,6 +98,7 @@
 		7B22935E2804C7C7007EB976 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7B58D0B1282B160B00C852E0 /* Constant.swift */,
 				7B2293612804C829007EB976 /* Character.swift */,
 			);
 			path = Models;
@@ -111,7 +107,8 @@
 		7B22935F2804C7CF007EB976 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7B0458372805F8840001E1D8 /* CollectionCell */,
+				7B9101592804CEA900F1F342 /* CharacterCell.xib */,
+				7B9101582804CEA900F1F342 /* CharacterCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -125,6 +122,34 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		7B73518D2889A5B300D278B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B22934D2804C790007EB976 /* Main.storyboard */,
+				7B2293502804C791007EB976 /* Assets.xcassets */,
+				7B2293522804C791007EB976 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		921C231434AB25ED1863FA47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224ED8B563FBF3C950913F68 /* Pods_BreakingBad_Character.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2C9E1E963B59383C8C49A40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDBAA1A5AFAE8302514F04C8 /* Pods-BreakingBad-Character.debug.xcconfig */,
+				813E42EAFE4E7CFCC812C81E /* Pods-BreakingBad-Character.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B2293582804C791007EB976 /* Build configuration list for PBXNativeTarget "BreakingBad-Character" */;
 			buildPhases = (
+				5270EB3816A70770ADE8A89A /* [CP] Check Pods Manifest.lock */,
 				7B2293402804C790007EB976 /* Sources */,
 				7B2293412804C790007EB976 /* Frameworks */,
 				7B2293422804C790007EB976 /* Resources */,
+				17B855BAD67A14E361517BCD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B855BAD67A14E361517BCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad-Character/Pods-BreakingBad-Character-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BreakingBad-Character/Pods-BreakingBad-Character-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BreakingBad-Character/Pods-BreakingBad-Character-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5270EB3816A70770ADE8A89A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BreakingBad-Character-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B2293402804C790007EB976 /* Sources */ = {
@@ -348,6 +417,7 @@
 		};
 		7B2293592804C791007EB976 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDBAA1A5AFAE8302514F04C8 /* Pods-BreakingBad-Character.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -375,6 +445,7 @@
 		};
 		7B22935A2804C791007EB976 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813E42EAFE4E7CFCC812C81E /* Pods-BreakingBad-Character.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

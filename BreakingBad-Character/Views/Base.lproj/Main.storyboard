@@ -28,7 +28,21 @@
                                 <view key="backgroundView" contentMode="scaleToFill" id="ZCG-hi-0pN">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-kp-o0L" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                            <rect key="frame" x="160" y="343" width="70" height="70"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="GfA-jr-8JZ"/>
+                                                <constraint firstAttribute="width" constant="70" id="YUd-Gd-Yr1"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="xcY-kp-o0L" firstAttribute="centerX" secondItem="ZCG-hi-0pN" secondAttribute="centerX" id="1Qr-c7-NSk"/>
+                                        <constraint firstItem="xcY-kp-o0L" firstAttribute="centerY" secondItem="ZCG-hi-0pN" secondAttribute="centerY" id="ebS-UT-hO1"/>
+                                    </constraints>
                                 </view>
                                 <cells/>
                             </collectionView>
@@ -46,6 +60,7 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="Jys-Vj-fQE"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="activeLoad" destination="xcY-kp-o0L" id="ngI-xv-Gsl"/>
                         <outlet property="collectionView" destination="0oS-uT-Jrs" id="vEx-6V-Vc6"/>
                     </connections>
                 </viewController>
